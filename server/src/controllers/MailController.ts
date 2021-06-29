@@ -75,7 +75,7 @@ export const handleMail = async (
     const to: string = req.body.to;
     const subject: string = req.body.subject;
     const html: string = req.body.html;
-    const useOwnCred: boolean = req.body.useOwnCred || false;
+    const useOwnCred: boolean = req.body.useOwnCred === "true" ? true : false;
 
     if (!apiKey.trim().length) {
       throw new InputError({ apiKey: "api key cannot be null" });

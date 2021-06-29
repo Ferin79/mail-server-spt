@@ -7,7 +7,7 @@
     "start": "mkdir dist/tmp && node dist/index.js",
     "build": "tsc",
     "watch": "tsc -w",
-    "dev": "rm -r *.log && nodemon dist/index.js",
+    "dev": "nodemon dist/index.js",
     "prepare": "husky install"
   },
   "author": "",
