@@ -1,5 +1,5 @@
 import axios from "axios";
-export const API = "http://localhost:4000";
+export const API = process.env.REACT_APP_API || "http://localhost:4000";
 
 const getAccessToken = () => {
   const { accessToken } = JSON.parse(localStorage.getItem("userData") || "[]");
