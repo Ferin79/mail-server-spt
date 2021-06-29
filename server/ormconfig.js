@@ -16,4 +16,7 @@ module.exports = {
   entities: ["dist/models/*.js"],
   migrations: ["dist/migration/**/*.migration.js"],
   subscribers: ["dist/subscriber/**/*.subscriber.js"],
+  ssl: {
+    rejectUnauthorized: false,
+  },
 };
